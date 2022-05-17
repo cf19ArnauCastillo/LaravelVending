@@ -15,8 +15,12 @@ use App\Http\Controllers\ProductosController;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcome');
 });
 
 
 Route::get('home', [ProductosController::class, 'getProductos']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
