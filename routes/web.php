@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\DetallesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +16,17 @@ use App\Http\Controllers\ProductosController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if(!isset($cookie['username'])){
+        return Redirect::to('http://127.0.0.1:8000/login');
+    }else{
+        return Redirect::to('http://127.0.0.1:8000/home');
+    }
 });
 
 
 Route::get('home', [ProductosController::class, 'getProductos']);
+
+Route::get('detalles/{id}', [DetallesController::class, 'getProducto']);
 
 Auth::routes();
 
