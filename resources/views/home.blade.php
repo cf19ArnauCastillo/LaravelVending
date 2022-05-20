@@ -43,21 +43,21 @@
 @extends('layouts.app')
 
 @section('content')
-                    @php
-                        $numero = 0;
-                    @endphp
-                    <div class="card-body">
-                        @foreach ($productos as $producto)
-                            @php
-                                $numero = $numero + 1;
-                            @endphp
-                            <div class="columna">
-                                <a href="/detalles/{{ $producto['id'] }}">
-                                    <img src='{{ $producto["imagen"] }}'>
-                                    <div class="preu">{{ $producto['precio'] }} €</div>
-                                    <div class="carril">Carril @php echo $numero @endphp</div>
-                                </a>
-                            </div>
-                        @endforeach
-                    </div>
+    @php
+    $numero = 0;
+    @endphp
+    <div class="card-body">
+        @foreach ($productos as $producto)
+            @php
+                $numero = $numero + 1;
+            @endphp
+            <div class="columna">
+                <a href="/detalles/{{ $producto['id'] }}">
+                    <img src='{{ $producto["imagen"] }}'>
+                    <div class="preu">{{ $producto['precio'] }} €</div>
+                    <div class="carril">Carril @php echo $numero @endphp</div>
+                </a>
+            </div>
+        @endforeach
+    </div>
 @endsection
