@@ -28,5 +28,9 @@ Route::get('home', [ProductosController::class, 'getProductos']);
 
 Route::get('detalles/{id}', [DetallesController::class, 'getProducto']);
 
+Route::get('compra', function(){
+    return view('compra');
+});
+
 Auth::routes();
 

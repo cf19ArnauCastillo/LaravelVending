@@ -57,7 +57,8 @@
       <td>{{$producto["proteinas"]}}</td>
    </tr>
 </table>
-<button href="/home">TORNAR</button>
+<input type="button" onclick="location.href='/home';" value="TORNAR">
+<input type="button" onclick="location.href='/compra';" value="COMPRAR">
 </div>
 
 
