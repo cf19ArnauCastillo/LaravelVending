@@ -53,7 +53,7 @@
                             @endphp
                             <div class="columna">
                                 <a href="/detalles/{{ $producto['id'] }}">
-                                    <img src='{{ $producto['imagen'] }}'>
+                                    <img src='{{ $producto["imagen"] }}'>
                                     <div class="preu">{{ $producto['precio'] }} €</div>
                                     <div class="carril">Carril @php echo $numero @endphp</div>
                                 </a>
