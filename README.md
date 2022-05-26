@@ -7,7 +7,7 @@
    - Editor, preferiblemente Visual Studio Code
 
 ## Como lanzar el proyecto    
-    - git clone URL_REPOSITORIO
+    - git clone git@github.com:cf19ArnauCastillo/LaravelVending.git
     - composer install
     - copy .env.example .env
     - DB_HOST=localhost
