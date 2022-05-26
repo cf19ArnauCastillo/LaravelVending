@@ -21,6 +21,3 @@
     
 ## Usuario
     - Puedes crearlo en el registro
-    - Usuarios existentes que puedes usar:
-        - Usuario: Arnau
-        - Contraseña: arnau
