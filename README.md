@@ -8,7 +8,7 @@
 
 ## Como lanzar el proyecto  
     Abrimos el terminal de linux, vamos a la carpeta donde queremos lanzar la aplicación y ejecutamos:
-    - git clone git@github.com:cf19ArnauCastillo/LaravelVending.git
+    - git clone https://github.com/cf19ArnauCastillo/LaravelVending.git
     Ejecutamos 'cd laravelvending', una vez dentro de la carpeta ejecutamos:
     - composer install
     - copy .env.example .env
