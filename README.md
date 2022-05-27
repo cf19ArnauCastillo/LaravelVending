@@ -25,4 +25,4 @@
     - php artisan serve
     
 ## Usuario
-    - Puedes crearlo en el registro
+    - Al iniciar la aplicación en la parte superior derecha puedes indicar si deseas registrarte o iniciar sesión.
