@@ -8,15 +8,27 @@
 
 ## Como lanzar el proyecto  
     Abrimos el terminal de linux, vamos a la carpeta donde queremos lanzar la aplicación y ejecutamos:
+    - sudo apt install php
+    - sudo apt-get install php-xml
+    - sudo apt install-php-curl
+    - sudo apt install git
+    - sudo apt install composer
+    - composer update
     - git clone https://github.com/cf19ArnauCastillo/LaravelVending.git
     Ejecutamos 'cd /LaravelVending', una vez dentro de la carpeta ejecutamos:
     - composer install
     - cp .env.example .env
-    En nuestro mysql creamos la base de datos llamada 'vending', una vez creada abrimos el archivo .env y lo editamos añadiendo la siguiente información  
+    - sudo apt install mariadb-server
+    - sudo apt-get install php-mysql
+    - sudo mysql
+    - crate database vending;
+    - grant all on *.* to 'usuario'@'localhost' identified by 'contrasena' with grant option;
+    - flush privileges;
+    Una vez creada abrimos el archivo .env y lo editamos añadiendo la siguiente información  
     - DB_HOST=localhost
     - DB_DATABASE=vending
-    - DB_USERNAME={{tu nombre de usuario de mysql o root}}
-    - DB_PASSWORD={{tu contraseña o en caso de ser root dejarlo vacio}}
+    - DB_USERNAME=usuario
+    - DB_PASSWORD=contrasena
     Una vez editado lo guardamos y lanzamos los siguientes comandos en la terminal:
     - php artisan key:generate
     - php artisan migrate
